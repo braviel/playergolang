@@ -13,6 +13,8 @@ type PlayerServer struct {
 	http.Handler
 }
 
+const jsonContentType = "application/json"
+
 //NewPlayerServer create new instance of playerserver
 func NewPlayerServer(store PlayerStore) *PlayerServer {
 	p := new(PlayerServer)
